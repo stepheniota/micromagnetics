@@ -12,34 +12,34 @@ from glob import glob
 
 ## pass in dir with .out folders when running script
 try:
-    dir_name = sys.argv[1:]
-    print(dir_name)
+    dir_names = sys.argv[1:]
+    print(dir_names)
 except:
-    print("ERROR: Please pass dir_name")
+    print("ERROR: Please pass dir_names")
     exit()
 
-for dir, __ in enumerate(dir_name):
+for dir, __ in enumerate(dir_names):
     ## pull paths to all .txt files
-    os.chdir(dir_name[dir])
-    print(dir_name[dir])
+    os.chdir(dir_names[dir])
+    print("Currently in "+dir_names[dir])
     file_names = sorted(glob("*.out/spectrum-new.txt"))
 
     #print(file_names)
 
     ## initialize output array
-    fh_table = np.zeros([10,1250])
+    num_fields = len(dir_names[dir])
+    #num_hzs = len()
+    current_fh_table = np.zeros([num_fields,1250])
 
     for field, __ in enumerate(file_names):
-        ## unpack=True --> returns transpose for easier indexing
-        current_table = np.loadtxt(file_names[field],skiprows=1,unpack=True)
-        fh_table[field] = current_table[5] ## 5th index is the full mag() values
+        current_table = np.loadtxt(file_names[field],skiprows=1,unpack=True) ## unpack=True --> returns transpose for easier indexing
+        current_fh_table[field] = current_table[5] ## 5th index is the full mag() values
 
     ## transpose array for MPL
-    fh_table = fh_table.T
-    np.savetxt("fh_table.txt",fh_table,delimiter="\t")
-
-    print("Data table saved at ./"+dir_name[dir]+"fh_table.txt")
+    # current_fh_table = current_fh_table.T
+    np.savetxt("fh_table.txt",current_fh_table.T,delimiter="\t")
+    print("Data table saved at ./"+dir_names[dir]+"fh_table.txt")
+    
     os.chdir("..")
 
-print("Finished!")
-
+print("Finished! Have fun plotting data :-)")
