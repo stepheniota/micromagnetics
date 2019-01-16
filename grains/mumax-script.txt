@@ -1,269 +1,794 @@
-// Variables for shape definition 
-py0_cuboid := cuboid(length,width,t_py).transl(0,0,(thickness/2-(1/2)*t_py))
-py1_cuboid := cuboid(length/64.0 , width/64.0, Zz).transl(length/2 - length/128.0,-width/4,zz)
-py2_cuboid := cuboid(length/64.0 , width/64.0, Zz).transl(length/2 - length/128.0,width/4,zz)
-py3_cuboid := cuboid(length/64.0 , width/64.0, Zz).transl(length/2 - length/128.0,-width/4,zz)
-py4_cuboid := cuboid(length/64.0 , width/64.0, Zz).transl(length/2 - length/128.0,width/4,zz)
-py5_cuboid := cuboid(length/64.0 , width/64.0, Zz).transl(length/2 - length/128.0,-width/4,zz)
-py6_cuboid := cuboid(length/64.0 , width/64.0, Zz).transl(length/2 - length/128.0,width/4,zz)
-py7_cuboid := cuboid(length/64.0 , width/64.0, Zz).transl(length/2 - length/128.0,-width/4,zz)
-py8_cuboid := cuboid(length/64.0 , width/64.0, Zz).transl(length/2 - length/128.0,width/4,zz)
-py9_cuboid := cuboid(length/64.0 , width/64.0, Zz).transl(length/2 - length/128.0,-width/4,zz)
-py10_cuboid := cuboid(length/64.0 , width/64.0, Zz).transl(length/2 - length/128.0,width/4,zz)
-py11_cuboid := cuboid(length/64.0 , width/64.0, Zz).transl(length/2 - length/128.0,-width/4,zz)
-py12_cuboid := cuboid(length/64.0 , width/64.0, Zz).transl(length/2 - length/128.0,width/4,zz)
-py13_cuboid := cuboid(length/64.0 , width/64.0, Zz).transl(length/2 - length/128.0,-width/4,zz)
-py14_cuboid := cuboid(length/64.0 , width/64.0, Zz).transl(length/2 - length/128.0,width/4,zz)
-py15_cuboid := cuboid(length/64.0 , width/64.0, Zz).transl(length/2 - length/128.0,-width/4,zz)
-py16_cuboid := cuboid(length/64.0 , width/64.0, Zz).transl(length/2 - length/128.0,width/4,zz)
-py17_cuboid := cuboid(length/64.0 , width/64.0, Zz).transl(length/2 - length/128.0,-width/4,zz)
-py18_cuboid := cuboid(length/64.0 , width/64.0, Zz).transl(length/2 - length/128.0,width/4,zz)
-py19_cuboid := cuboid(length/64.0 , width/64.0, Zz).transl(length/2 - length/128.0,-width/4,zz)
-py20_cuboid := cuboid(length/64.0 , width/64.0, Zz).transl(length/2 - length/128.0,width/4,zz)
-py21_cuboid := cuboid(length/64.0 , width/64.0, Zz).transl(length/2 - length/128.0,-width/4,zz)
-py22_cuboid := cuboid(length/64.0 , width/64.0, Zz).transl(length/2 - length/128.0,width/4,zz)
-py23_cuboid := cuboid(length/64.0 , width/64.0, Zz).transl(length/2 - length/128.0,-width/4,zz)
-py24_cuboid := cuboid(length/64.0 , width/64.0, Zz).transl(length/2 - length/128.0,width/4,zz)
-py25_cuboid := cuboid(length/64.0 , width/64.0, Zz).transl(length/2 - length/128.0,-width/4,zz)
-py26_cuboid := cuboid(length/64.0 , width/64.0, Zz).transl(length/2 - length/128.0,width/4,zz)
-py27_cuboid := cuboid(length/64.0 , width/64.0, Zz).transl(length/2 - length/128.0,-width/4,zz)
-py28_cuboid := cuboid(length/64.0 , width/64.0, Zz).transl(length/2 - length/128.0,width/4,zz)
-py29_cuboid := cuboid(length/64.0 , width/64.0, Zz).transl(length/2 - length/128.0,-width/4,zz)
-py30_cuboid := cuboid(length/64.0 , width/64.0, Zz).transl(length/2 - length/128.0,width/4,zz)
-py31_cuboid := cuboid(length/64.0 , width/64.0, Zz).transl(length/2 - length/128.0,-width/4,zz)
-py32_cuboid := cuboid(length/64.0 , width/64.0, Zz).transl(length/2 - length/128.0,width/4,zz)
-py33_cuboid := cuboid(length/64.0 , width/64.0, Zz).transl(length/2 - length/128.0,-width/4,zz)
-py34_cuboid := cuboid(length/64.0 , width/64.0, Zz).transl(length/2 - length/128.0,width/4,zz)
-py35_cuboid := cuboid(length/64.0 , width/64.0, Zz).transl(length/2 - length/128.0,-width/4,zz)
-py36_cuboid := cuboid(length/64.0 , width/64.0, Zz).transl(length/2 - length/128.0,width/4,zz)
-py37_cuboid := cuboid(length/64.0 , width/64.0, Zz).transl(length/2 - length/128.0,-width/4,zz)
-py38_cuboid := cuboid(length/64.0 , width/64.0, Zz).transl(length/2 - length/128.0,width/4,zz)
-py39_cuboid := cuboid(length/64.0 , width/64.0, Zz).transl(length/2 - length/128.0,-width/4,zz)
-py40_cuboid := cuboid(length/64.0 , width/64.0, Zz).transl(length/2 - length/128.0,width/4,zz)
-py41_cuboid := cuboid(length/64.0 , width/64.0, Zz).transl(length/2 - length/128.0,-width/4,zz)
-py42_cuboid := cuboid(length/64.0 , width/64.0, Zz).transl(length/2 - length/128.0,width/4,zz)
-py43_cuboid := cuboid(length/64.0 , width/64.0, Zz).transl(length/2 - length/128.0,-width/4,zz)
-py44_cuboid := cuboid(length/64.0 , width/64.0, Zz).transl(length/2 - length/128.0,width/4,zz)
-py45_cuboid := cuboid(length/64.0 , width/64.0, Zz).transl(length/2 - length/128.0,-width/4,zz)
-py46_cuboid := cuboid(length/64.0 , width/64.0, Zz).transl(length/2 - length/128.0,width/4,zz)
-py47_cuboid := cuboid(length/64.0 , width/64.0, Zz).transl(length/2 - length/128.0,-width/4,zz)
-py48_cuboid := cuboid(length/64.0 , width/64.0, Zz).transl(length/2 - length/128.0,width/4,zz)
-py49_cuboid := cuboid(length/64.0 , width/64.0, Zz).transl(length/2 - length/128.0,-width/4,zz)
-py50_cuboid := cuboid(length/64.0 , width/64.0, Zz).transl(length/2 - length/128.0,width/4,zz)
-py51_cuboid := cuboid(length/64.0 , width/64.0, Zz).transl(length/2 - length/128.0,-width/4,zz)
-py52_cuboid := cuboid(length/64.0 , width/64.0, Zz).transl(length/2 - length/128.0,width/4,zz)
-py53_cuboid := cuboid(length/64.0 , width/64.0, Zz).transl(length/2 - length/128.0,-width/4,zz)
-py54_cuboid := cuboid(length/64.0 , width/64.0, Zz).transl(length/2 - length/128.0,width/4,zz)
-py55_cuboid := cuboid(length/64.0 , width/64.0, Zz).transl(length/2 - length/128.0,-width/4,zz)
-py56_cuboid := cuboid(length/64.0 , width/64.0, Zz).transl(length/2 - length/128.0,width/4,zz)
-py57_cuboid := cuboid(length/64.0 , width/64.0, Zz).transl(length/2 - length/128.0,-width/4,zz)
-py58_cuboid := cuboid(length/64.0 , width/64.0, Zz).transl(length/2 - length/128.0,width/4,zz)
-py59_cuboid := cuboid(length/64.0 , width/64.0, Zz).transl(length/2 - length/128.0,-width/4,zz)
-py60_cuboid := cuboid(length/64.0 , width/64.0, Zz).transl(length/2 - length/128.0,width/4,zz)
-py61_cuboid := cuboid(length/64.0 , width/64.0, Zz).transl(length/2 - length/128.0,-width/4,zz)
-py62_cuboid := cuboid(length/64.0 , width/64.0, Zz).transl(length/2 - length/128.0,width/4,zz)
-py63_cuboid := cuboid(length/64.0 , width/64.0, Zz).transl(length/2 - length/128.0,-width/4,zz)
-py64_cuboid := cuboid(length/64.0 , width/64.0, Zz).transl(length/2 - length/128.0,width/4,zz)
-yig65_cuboid := cuboid(length/64.0 , width/64.0, Zz).transl(length/2 - length/128.0,-width/4,0)
-yig66_cuboid := cuboid(length/64.0 , width/64.0, Zz).transl(length/2 - length/128.0,width/4,0)
-yig67_cuboid := cuboid(length/64.0 , width/64.0, Zz).transl(length/2 - length/128.0,-width/4,0)
-yig68_cuboid := cuboid(length/64.0 , width/64.0, Zz).transl(length/2 - length/128.0,width/4,0)
-yig69_cuboid := cuboid(length/64.0 , width/64.0, Zz).transl(length/2 - length/128.0,-width/4,0)
-yig70_cuboid := cuboid(length/64.0 , width/64.0, Zz).transl(length/2 - length/128.0,width/4,0)
-yig71_cuboid := cuboid(length/64.0 , width/64.0, Zz).transl(length/2 - length/128.0,-width/4,0)
-yig72_cuboid := cuboid(length/64.0 , width/64.0, Zz).transl(length/2 - length/128.0,width/4,0)
-yig73_cuboid := cuboid(length/64.0 , width/64.0, Zz).transl(length/2 - length/128.0,-width/4,0)
-yig74_cuboid := cuboid(length/64.0 , width/64.0, Zz).transl(length/2 - length/128.0,width/4,0)
-yig75_cuboid := cuboid(length/64.0 , width/64.0, Zz).transl(length/2 - length/128.0,-width/4,0)
-yig76_cuboid := cuboid(length/64.0 , width/64.0, Zz).transl(length/2 - length/128.0,width/4,0)
-yig77_cuboid := cuboid(length/64.0 , width/64.0, Zz).transl(length/2 - length/128.0,-width/4,0)
-yig78_cuboid := cuboid(length/64.0 , width/64.0, Zz).transl(length/2 - length/128.0,width/4,0)
-yig79_cuboid := cuboid(length/64.0 , width/64.0, Zz).transl(length/2 - length/128.0,-width/4,0)
-yig80_cuboid := cuboid(length/64.0 , width/64.0, Zz).transl(length/2 - length/128.0,width/4,0)
-yig81_cuboid := cuboid(length/64.0 , width/64.0, Zz).transl(length/2 - length/128.0,-width/4,0)
-yig82_cuboid := cuboid(length/64.0 , width/64.0, Zz).transl(length/2 - length/128.0,width/4,0)
-yig83_cuboid := cuboid(length/64.0 , width/64.0, Zz).transl(length/2 - length/128.0,-width/4,0)
-yig84_cuboid := cuboid(length/64.0 , width/64.0, Zz).transl(length/2 - length/128.0,width/4,0)
-yig85_cuboid := cuboid(length/64.0 , width/64.0, Zz).transl(length/2 - length/128.0,-width/4,0)
-yig86_cuboid := cuboid(length/64.0 , width/64.0, Zz).transl(length/2 - length/128.0,width/4,0)
-yig87_cuboid := cuboid(length/64.0 , width/64.0, Zz).transl(length/2 - length/128.0,-width/4,0)
-yig88_cuboid := cuboid(length/64.0 , width/64.0, Zz).transl(length/2 - length/128.0,width/4,0)
-yig89_cuboid := cuboid(length/64.0 , width/64.0, Zz).transl(length/2 - length/128.0,-width/4,0)
-yig90_cuboid := cuboid(length/64.0 , width/64.0, Zz).transl(length/2 - length/128.0,width/4,0)
-yig91_cuboid := cuboid(length/64.0 , width/64.0, Zz).transl(length/2 - length/128.0,-width/4,0)
-yig92_cuboid := cuboid(length/64.0 , width/64.0, Zz).transl(length/2 - length/128.0,width/4,0)
-yig93_cuboid := cuboid(length/64.0 , width/64.0, Zz).transl(length/2 - length/128.0,-width/4,0)
-yig94_cuboid := cuboid(length/64.0 , width/64.0, Zz).transl(length/2 - length/128.0,width/4,0)
-yig95_cuboid := cuboid(length/64.0 , width/64.0, Zz).transl(length/2 - length/128.0,-width/4,0)
-yig96_cuboid := cuboid(length/64.0 , width/64.0, Zz).transl(length/2 - length/128.0,width/4,0)
-yig97_cuboid := cuboid(length/64.0 , width/64.0, Zz).transl(length/2 - length/128.0,-width/4,0)
-yig98_cuboid := cuboid(length/64.0 , width/64.0, Zz).transl(length/2 - length/128.0,width/4,0)
-yig99_cuboid := cuboid(length/64.0 , width/64.0, Zz).transl(length/2 - length/128.0,-width/4,0)
-yig100_cuboid := cuboid(length/64.0 , width/64.0, Zz).transl(length/2 - length/128.0,width/4,0)
-yig101_cuboid := cuboid(length/64.0 , width/64.0, Zz).transl(length/2 - length/128.0,-width/4,0)
-yig102_cuboid := cuboid(length/64.0 , width/64.0, Zz).transl(length/2 - length/128.0,width/4,0)
-yig103_cuboid := cuboid(length/64.0 , width/64.0, Zz).transl(length/2 - length/128.0,-width/4,0)
-yig104_cuboid := cuboid(length/64.0 , width/64.0, Zz).transl(length/2 - length/128.0,width/4,0)
-yig105_cuboid := cuboid(length/64.0 , width/64.0, Zz).transl(length/2 - length/128.0,-width/4,0)
-yig106_cuboid := cuboid(length/64.0 , width/64.0, Zz).transl(length/2 - length/128.0,width/4,0)
-yig107_cuboid := cuboid(length/64.0 , width/64.0, Zz).transl(length/2 - length/128.0,-width/4,0)
-yig108_cuboid := cuboid(length/64.0 , width/64.0, Zz).transl(length/2 - length/128.0,width/4,0)
-yig109_cuboid := cuboid(length/64.0 , width/64.0, Zz).transl(length/2 - length/128.0,-width/4,0)
-yig110_cuboid := cuboid(length/64.0 , width/64.0, Zz).transl(length/2 - length/128.0,width/4,0)
-yig111_cuboid := cuboid(length/64.0 , width/64.0, Zz).transl(length/2 - length/128.0,-width/4,0)
-yig112_cuboid := cuboid(length/64.0 , width/64.0, Zz).transl(length/2 - length/128.0,width/4,0)
-yig113_cuboid := cuboid(length/64.0 , width/64.0, Zz).transl(length/2 - length/128.0,-width/4,0)
-yig114_cuboid := cuboid(length/64.0 , width/64.0, Zz).transl(length/2 - length/128.0,width/4,0)
-yig115_cuboid := cuboid(length/64.0 , width/64.0, Zz).transl(length/2 - length/128.0,-width/4,0)
-yig116_cuboid := cuboid(length/64.0 , width/64.0, Zz).transl(length/2 - length/128.0,width/4,0)
-yig117_cuboid := cuboid(length/64.0 , width/64.0, Zz).transl(length/2 - length/128.0,-width/4,0)
-yig118_cuboid := cuboid(length/64.0 , width/64.0, Zz).transl(length/2 - length/128.0,width/4,0)
-yig119_cuboid := cuboid(length/64.0 , width/64.0, Zz).transl(length/2 - length/128.0,-width/4,0)
-yig120_cuboid := cuboid(length/64.0 , width/64.0, Zz).transl(length/2 - length/128.0,width/4,0)
-yig121_cuboid := cuboid(length/64.0 , width/64.0, Zz).transl(length/2 - length/128.0,-width/4,0)
-yig122_cuboid := cuboid(length/64.0 , width/64.0, Zz).transl(length/2 - length/128.0,width/4,0)
-yig123_cuboid := cuboid(length/64.0 , width/64.0, Zz).transl(length/2 - length/128.0,-width/4,0)
-yig124_cuboid := cuboid(length/64.0 , width/64.0, Zz).transl(length/2 - length/128.0,width/4,0)
-yig125_cuboid := cuboid(length/64.0 , width/64.0, Zz).transl(length/2 - length/128.0,-width/4,0)
-yig126_cuboid := cuboid(length/64.0 , width/64.0, Zz).transl(length/2 - length/128.0,width/4,0)
-yig127_cuboid := cuboid(length/64.0 , width/64.0, Zz).transl(length/2 - length/128.0,-width/4,0)
-yig128_cuboid := cuboid(length/64.0 , width/64.0, Zz).transl(length/2 - length/128.0,width/4,0)
-yig129_cuboid := cuboid(length,width,t_yig).transl(0,0,-(thickness/2-(1/2)*t_yig))
-// Material Parameters
-MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)// Material Parameters
-MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,11)Aex.SetRegion(i,44)MSat.SetRegion(i,11)Aex.SetRegion(i,44)MSat.SetRegion(i,11)Aex.SetRegion(i,44)MSat.SetRegion(i,11)Aex.SetRegion(i,44)MSat.SetRegion(i,11)Aex.SetRegion(i,44)MSat.SetRegion(i,11)Aex.SetRegion(i,44)MSat.SetRegion(i,11)Aex.SetRegion(i,44)MSat.SetRegion(i,11)Aex.SetRegion(i,44)MSat.SetRegion(i,11)Aex.SetRegion(i,44)MSat.SetRegion(i,11)Aex.SetRegion(i,44)MSat.SetRegion(i,11)Aex.SetRegion(i,44)MSat.SetRegion(i,11)Aex.SetRegion(i,44)MSat.SetRegion(i,11)Aex.SetRegion(i,44)MSat.SetRegion(i,11)Aex.SetRegion(i,44)MSat.SetRegion(i,11)Aex.SetRegion(i,44)MSat.SetRegion(i,11)Aex.SetRegion(i,44)MSat.SetRegion(i,11)Aex.SetRegion(i,44)MSat.SetRegion(i,11)Aex.SetRegion(i,44)MSat.SetRegion(i,11)Aex.SetRegion(i,44)MSat.SetRegion(i,11)Aex.SetRegion(i,44)MSat.SetRegion(i,11)Aex.SetRegion(i,44)MSat.SetRegion(i,11)Aex.SetRegion(i,44)MSat.SetRegion(i,11)Aex.SetRegion(i,44)MSat.SetRegion(i,11)Aex.SetRegion(i,44)MSat.SetRegion(i,11)Aex.SetRegion(i,44)MSat.SetRegion(i,11)Aex.SetRegion(i,44)MSat.SetRegion(i,11)Aex.SetRegion(i,44)MSat.SetRegion(i,11)Aex.SetRegion(i,44)MSat.SetRegion(i,11)Aex.SetRegion(i,44)MSat.SetRegion(i,11)Aex.SetRegion(i,44)MSat.SetRegion(i,11)Aex.SetRegion(i,44)MSat.SetRegion(i,11)Aex.SetRegion(i,44)MSat.SetRegion(i,11)Aex.SetRegion(i,44)MSat.SetRegion(i,11)Aex.SetRegion(i,44)MSat.SetRegion(i,11)Aex.SetRegion(i,44)MSat.SetRegion(i,11)Aex.SetRegion(i,44)MSat.SetRegion(i,11)Aex.SetRegion(i,44)MSat.SetRegion(i,11)Aex.SetRegion(i,44)MSat.SetRegion(i,11)Aex.SetRegion(i,44)MSat.SetRegion(i,11)Aex.SetRegion(i,44)MSat.SetRegion(i,11)Aex.SetRegion(i,44)MSat.SetRegion(i,11)Aex.SetRegion(i,44)MSat.SetRegion(i,11)Aex.SetRegion(i,44)MSat.SetRegion(i,11)Aex.SetRegion(i,44)MSat.SetRegion(i,11)Aex.SetRegion(i,44)MSat.SetRegion(i,11)Aex.SetRegion(i,44)MSat.SetRegion(i,11)Aex.SetRegion(i,44)MSat.SetRegion(i,11)Aex.SetRegion(i,44)MSat.SetRegion(i,11)Aex.SetRegion(i,44)MSat.SetRegion(i,11)Aex.SetRegion(i,44)MSat.SetRegion(i,11)Aex.SetRegion(i,44)MSat.SetRegion(i,11)Aex.SetRegion(i,44)MSat.SetRegion(i,11)Aex.SetRegion(i,44)MSat.SetRegion(i,11)Aex.SetRegion(i,44)MSat.SetRegion(i,11)Aex.SetRegion(i,44)MSat.SetRegion(i,11)Aex.SetRegion(i,44)MSat.SetRegion(i,11)Aex.SetRegion(i,44)MSat.SetRegion(i,11)Aex.SetRegion(i,44)MSat.SetRegion(i,11)Aex.SetRegion(i,44)MSat.SetRegion(i,11)Aex.SetRegion(i,44)MSat.SetRegion(i,11)Aex.SetRegion(i,44)MSat.SetRegion(i,11)Aex.SetRegion(i,44)MSat.SetRegion(i,11)Aex.SetRegion(i,44)MSat.SetRegion(i,11)Aex.SetRegion(i,44)MSat.SetRegion(i,11)Aex.SetRegion(i,44)
- // Material Parameters
-MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,22)Aex.SetRegion(i,33)MSat.SetRegion(i,11)Aex.SetRegion(i,44)MSat.SetRegion(i,11)Aex.SetRegion(i,44)MSat.SetRegion(i,11)Aex.SetRegion(i,44)MSat.SetRegion(i,11)Aex.SetRegion(i,44)MSat.SetRegion(i,11)Aex.SetRegion(i,44)MSat.SetRegion(i,11)Aex.SetRegion(i,44)MSat.SetRegion(i,11)Aex.SetRegion(i,44)MSat.SetRegion(i,11)Aex.SetRegion(i,44)MSat.SetRegion(i,11)Aex.SetRegion(i,44)MSat.SetRegion(i,11)Aex.SetRegion(i,44)MSat.SetRegion(i,11)Aex.SetRegion(i,44)MSat.SetRegion(i,11)Aex.SetRegion(i,44)MSat.SetRegion(i,11)Aex.SetRegion(i,44)MSat.SetRegion(i,11)Aex.SetRegion(i,44)MSat.SetRegion(i,11)Aex.SetRegion(i,44)MSat.SetRegion(i,11)Aex.SetRegion(i,44)MSat.SetRegion(i,11)Aex.SetRegion(i,44)MSat.SetRegion(i,11)Aex.SetRegion(i,44)MSat.SetRegion(i,11)Aex.SetRegion(i,44)MSat.SetRegion(i,11)Aex.SetRegion(i,44)MSat.SetRegion(i,11)Aex.SetRegion(i,44)MSat.SetRegion(i,11)Aex.SetRegion(i,44)MSat.SetRegion(i,11)Aex.SetRegion(i,44)MSat.SetRegion(i,11)Aex.SetRegion(i,44)MSat.SetRegion(i,11)Aex.SetRegion(i,44)MSat.SetRegion(i,11)Aex.SetRegion(i,44)MSat.SetRegion(i,11)Aex.SetRegion(i,44)MSat.SetRegion(i,11)Aex.SetRegion(i,44)MSat.SetRegion(i,11)Aex.SetRegion(i,44)MSat.SetRegion(i,11)Aex.SetRegion(i,44)MSat.SetRegion(i,11)Aex.SetRegion(i,44)MSat.SetRegion(i,11)Aex.SetRegion(i,44)MSat.SetRegion(i,11)Aex.SetRegion(i,44)MSat.SetRegion(i,11)Aex.SetRegion(i,44)MSat.SetRegion(i,11)Aex.SetRegion(i,44)MSat.SetRegion(i,11)Aex.SetRegion(i,44)MSat.SetRegion(i,11)Aex.SetRegion(i,44)MSat.SetRegion(i,11)Aex.SetRegion(i,44)MSat.SetRegion(i,11)Aex.SetRegion(i,44)MSat.SetRegion(i,11)Aex.SetRegion(i,44)MSat.SetRegion(i,11)Aex.SetRegion(i,44)MSat.SetRegion(i,11)Aex.SetRegion(i,44)MSat.SetRegion(i,11)Aex.SetRegion(i,44)MSat.SetRegion(i,11)Aex.SetRegion(i,44)MSat.SetRegion(i,11)Aex.SetRegion(i,44)MSat.SetRegion(i,11)Aex.SetRegion(i,44)MSat.SetRegion(i,11)Aex.SetRegion(i,44)MSat.SetRegion(i,11)Aex.SetRegion(i,44)MSat.SetRegion(i,11)Aex.SetRegion(i,44)MSat.SetRegion(i,11)Aex.SetRegion(i,44)MSat.SetRegion(i,11)Aex.SetRegion(i,44)MSat.SetRegion(i,11)Aex.SetRegion(i,44)MSat.SetRegion(i,11)Aex.SetRegion(i,44)MSat.SetRegion(i,11)Aex.SetRegion(i,44)MSat.SetRegion(i,11)Aex.SetRegion(i,44)MSat.SetRegion(i,11)Aex.SetRegion(i,44)MSat.SetRegion(i,11)Aex.SetRegion(i,44)MSat.SetRegion(i,11)Aex.SetRegion(i,44)MSat.SetRegion(i,11)Aex.SetRegion(i,44)MSat.SetRegion(i,11)Aex.SetRegion(i,44)MSat.SetRegion(i,11)Aex.SetRegion(i,44)MSat.SetRegion(i,11)Aex.SetRegion(i,44)MSat.SetRegion(i,11)Aex.SetRegion(i,44)MSat.SetRegion(i,11)Aex.SetRegion(i,44)MSat.SetRegion(i,11)Aex.SetRegion(i,44)
-// Define Regions
-DefRegion.(0py0_cuboidDefRegion.(1py1_cuboidDefRegion.(2py2_cuboidDefRegion.(3py3_cuboidDefRegion.(4py4_cuboidDefRegion.(5py5_cuboidDefRegion.(6py6_cuboidDefRegion.(7py7_cuboidDefRegion.(8py8_cuboidDefRegion.(9py9_cuboidDefRegion.(10py10_cuboidDefRegion.(11py11_cuboidDefRegion.(12py12_cuboidDefRegion.(13py13_cuboidDefRegion.(14py14_cuboidDefRegion.(15py15_cuboidDefRegion.(16py16_cuboidDefRegion.(17py17_cuboidDefRegion.(18py18_cuboidDefRegion.(19py19_cuboidDefRegion.(20py20_cuboidDefRegion.(21py21_cuboidDefRegion.(22py22_cuboidDefRegion.(23py23_cuboidDefRegion.(24py24_cuboidDefRegion.(25py25_cuboidDefRegion.(26py26_cuboidDefRegion.(27py27_cuboidDefRegion.(28py28_cuboidDefRegion.(29py29_cuboidDefRegion.(30py30_cuboidDefRegion.(31py31_cuboidDefRegion.(32py32_cuboidDefRegion.(33py33_cuboidDefRegion.(34py34_cuboidDefRegion.(35py35_cuboidDefRegion.(36py36_cuboidDefRegion.(37py37_cuboidDefRegion.(38py38_cuboidDefRegion.(39py39_cuboidDefRegion.(40py40_cuboidDefRegion.(41py41_cuboidDefRegion.(42py42_cuboidDefRegion.(43py43_cuboidDefRegion.(44py44_cuboidDefRegion.(45py45_cuboidDefRegion.(46py46_cuboidDefRegion.(47py47_cuboidDefRegion.(48py48_cuboidDefRegion.(49py49_cuboidDefRegion.(50py50_cuboidDefRegion.(51py51_cuboidDefRegion.(52py52_cuboidDefRegion.(53py53_cuboidDefRegion.(54py54_cuboidDefRegion.(55py55_cuboidDefRegion.(56py56_cuboidDefRegion.(57py57_cuboidDefRegion.(58py58_cuboidDefRegion.(59py59_cuboidDefRegion.(60py60_cuboidDefRegion.(61py61_cuboidDefRegion.(62py62_cuboidDefRegion.(63py63_cuboidDefRegion.(64py64_cuboidDefRegion.(65yig65_cuboidDefRegion.(66yig66_cuboidDefRegion.(67yig67_cuboidDefRegion.(68yig68_cuboidDefRegion.(69yig69_cuboidDefRegion.(70yig70_cuboidDefRegion.(71yig71_cuboidDefRegion.(72yig72_cuboidDefRegion.(73yig73_cuboidDefRegion.(74yig74_cuboidDefRegion.(75yig75_cuboidDefRegion.(76yig76_cuboidDefRegion.(77yig77_cuboidDefRegion.(78yig78_cuboidDefRegion.(79yig79_cuboidDefRegion.(80yig80_cuboidDefRegion.(81yig81_cuboidDefRegion.(82yig82_cuboidDefRegion.(83yig83_cuboidDefRegion.(84yig84_cuboidDefRegion.(85yig85_cuboidDefRegion.(86yig86_cuboidDefRegion.(87yig87_cuboidDefRegion.(88yig88_cuboidDefRegion.(89yig89_cuboidDefRegion.(90yig90_cuboidDefRegion.(91yig91_cuboidDefRegion.(92yig92_cuboidDefRegion.(93yig93_cuboidDefRegion.(94yig94_cuboidDefRegion.(95yig95_cuboidDefRegion.(96yig96_cuboidDefRegion.(97yig97_cuboidDefRegion.(98yig98_cuboidDefRegion.(99yig99_cuboidDefRegion.(100yig100_cuboidDefRegion.(101yig101_cuboidDefRegion.(102yig102_cuboidDefRegion.(103yig103_cuboidDefRegion.(104yig104_cuboidDefRegion.(105yig105_cuboidDefRegion.(106yig106_cuboidDefRegion.(107yig107_cuboidDefRegion.(108yig108_cuboidDefRegion.(109yig109_cuboidDefRegion.(110yig110_cuboidDefRegion.(111yig111_cuboidDefRegion.(112yig112_cuboidDefRegion.(113yig113_cuboidDefRegion.(114yig114_cuboidDefRegion.(115yig115_cuboidDefRegion.(116yig116_cuboidDefRegion.(117yig117_cuboidDefRegion.(118yig118_cuboidDefRegion.(119yig119_cuboidDefRegion.(120yig120_cuboidDefRegion.(121yig121_cuboidDefRegion.(122yig122_cuboidDefRegion.(123yig123_cuboidDefRegion.(124yig124_cuboidDefRegion.(125yig125_cuboidDefRegion.(126yig126_cuboidDefRegion.(127yig127_cuboidDefRegion.(128yig128_cuboidDefRegion.(129yig129_cuboid
-// Define Regions
-DefRegion.(0,py0_cuboid)
-DefRegion.(1,py1_cuboid)
-DefRegion.(2,py2_cuboid)
-DefRegion.(3,py3_cuboid)
-DefRegion.(4,py4_cuboid)
-DefRegion.(5,py5_cuboid)
-DefRegion.(6,py6_cuboid)
-DefRegion.(7,py7_cuboid)
-DefRegion.(8,py8_cuboid)
-DefRegion.(9,py9_cuboid)
-DefRegion.(10,py10_cuboid)
-DefRegion.(11,py11_cuboid)
-DefRegion.(12,py12_cuboid)
-DefRegion.(13,py13_cuboid)
-DefRegion.(14,py14_cuboid)
-DefRegion.(15,py15_cuboid)
-DefRegion.(16,py16_cuboid)
-DefRegion.(17,py17_cuboid)
-DefRegion.(18,py18_cuboid)
-DefRegion.(19,py19_cuboid)
-DefRegion.(20,py20_cuboid)
-DefRegion.(21,py21_cuboid)
-DefRegion.(22,py22_cuboid)
-DefRegion.(23,py23_cuboid)
-DefRegion.(24,py24_cuboid)
-DefRegion.(25,py25_cuboid)
-DefRegion.(26,py26_cuboid)
-DefRegion.(27,py27_cuboid)
-DefRegion.(28,py28_cuboid)
-DefRegion.(29,py29_cuboid)
-DefRegion.(30,py30_cuboid)
-DefRegion.(31,py31_cuboid)
-DefRegion.(32,py32_cuboid)
-DefRegion.(33,py33_cuboid)
-DefRegion.(34,py34_cuboid)
-DefRegion.(35,py35_cuboid)
-DefRegion.(36,py36_cuboid)
-DefRegion.(37,py37_cuboid)
-DefRegion.(38,py38_cuboid)
-DefRegion.(39,py39_cuboid)
-DefRegion.(40,py40_cuboid)
-DefRegion.(41,py41_cuboid)
-DefRegion.(42,py42_cuboid)
-DefRegion.(43,py43_cuboid)
-DefRegion.(44,py44_cuboid)
-DefRegion.(45,py45_cuboid)
-DefRegion.(46,py46_cuboid)
-DefRegion.(47,py47_cuboid)
-DefRegion.(48,py48_cuboid)
-DefRegion.(49,py49_cuboid)
-DefRegion.(50,py50_cuboid)
-DefRegion.(51,py51_cuboid)
-DefRegion.(52,py52_cuboid)
-DefRegion.(53,py53_cuboid)
-DefRegion.(54,py54_cuboid)
-DefRegion.(55,py55_cuboid)
-DefRegion.(56,py56_cuboid)
-DefRegion.(57,py57_cuboid)
-DefRegion.(58,py58_cuboid)
-DefRegion.(59,py59_cuboid)
-DefRegion.(60,py60_cuboid)
-DefRegion.(61,py61_cuboid)
-DefRegion.(62,py62_cuboid)
-DefRegion.(63,py63_cuboid)
-DefRegion.(64,py64_cuboid)
-DefRegion.(65,yig65_cuboid)
-DefRegion.(66,yig66_cuboid)
-DefRegion.(67,yig67_cuboid)
-DefRegion.(68,yig68_cuboid)
-DefRegion.(69,yig69_cuboid)
-DefRegion.(70,yig70_cuboid)
-DefRegion.(71,yig71_cuboid)
-DefRegion.(72,yig72_cuboid)
-DefRegion.(73,yig73_cuboid)
-DefRegion.(74,yig74_cuboid)
-DefRegion.(75,yig75_cuboid)
-DefRegion.(76,yig76_cuboid)
-DefRegion.(77,yig77_cuboid)
-DefRegion.(78,yig78_cuboid)
-DefRegion.(79,yig79_cuboid)
-DefRegion.(80,yig80_cuboid)
-DefRegion.(81,yig81_cuboid)
-DefRegion.(82,yig82_cuboid)
-DefRegion.(83,yig83_cuboid)
-DefRegion.(84,yig84_cuboid)
-DefRegion.(85,yig85_cuboid)
-DefRegion.(86,yig86_cuboid)
-DefRegion.(87,yig87_cuboid)
-DefRegion.(88,yig88_cuboid)
-DefRegion.(89,yig89_cuboid)
-DefRegion.(90,yig90_cuboid)
-DefRegion.(91,yig91_cuboid)
-DefRegion.(92,yig92_cuboid)
-DefRegion.(93,yig93_cuboid)
-DefRegion.(94,yig94_cuboid)
-DefRegion.(95,yig95_cuboid)
-DefRegion.(96,yig96_cuboid)
-DefRegion.(97,yig97_cuboid)
-DefRegion.(98,yig98_cuboid)
-DefRegion.(99,yig99_cuboid)
-DefRegion.(100,yig100_cuboid)
-DefRegion.(101,yig101_cuboid)
-DefRegion.(102,yig102_cuboid)
-DefRegion.(103,yig103_cuboid)
-DefRegion.(104,yig104_cuboid)
-DefRegion.(105,yig105_cuboid)
-DefRegion.(106,yig106_cuboid)
-DefRegion.(107,yig107_cuboid)
-DefRegion.(108,yig108_cuboid)
-DefRegion.(109,yig109_cuboid)
-DefRegion.(110,yig110_cuboid)
-DefRegion.(111,yig111_cuboid)
-DefRegion.(112,yig112_cuboid)
-DefRegion.(113,yig113_cuboid)
-DefRegion.(114,yig114_cuboid)
-DefRegion.(115,yig115_cuboid)
-DefRegion.(116,yig116_cuboid)
-DefRegion.(117,yig117_cuboid)
-DefRegion.(118,yig118_cuboid)
-DefRegion.(119,yig119_cuboid)
-DefRegion.(120,yig120_cuboid)
-DefRegion.(121,yig121_cuboid)
-DefRegion.(122,yig122_cuboid)
-DefRegion.(123,yig123_cuboid)
-DefRegion.(124,yig124_cuboid)
-DefRegion.(125,yig125_cuboid)
-DefRegion.(126,yig126_cuboid)
-DefRegion.(127,yig127_cuboid)
-DefRegion.(128,yig128_cuboid)
-DefRegion.(129,yig129_cuboid)
+// Variables for Shape Definition
+py0_cuboid := cuboid
+py1_cuboid := cuboid
+py2_cuboid := cuboid
+py3_cuboid := cuboid
+py4_cuboid := cuboid
+py5_cuboid := cuboid
+py6_cuboid := cuboid
+py7_cuboid := cuboid
+py8_cuboid := cuboid
+py9_cuboid := cuboid
+py10_cuboid := cuboid
+py11_cuboid := cuboid
+py12_cuboid := cuboid
+py13_cuboid := cuboid
+py14_cuboid := cuboid
+py15_cuboid := cuboid
+py16_cuboid := cuboid
+py17_cuboid := cuboid
+py18_cuboid := cuboid
+py19_cuboid := cuboid
+py20_cuboid := cuboid
+py21_cuboid := cuboid
+py22_cuboid := cuboid
+py23_cuboid := cuboid
+py24_cuboid := cuboid
+py25_cuboid := cuboid
+py26_cuboid := cuboid
+py27_cuboid := cuboid
+py28_cuboid := cuboid
+py29_cuboid := cuboid
+py30_cuboid := cuboid
+py31_cuboid := cuboid
+py32_cuboid := cuboid
+py33_cuboid := cuboid
+py34_cuboid := cuboid
+py35_cuboid := cuboid
+py36_cuboid := cuboid
+py37_cuboid := cuboid
+py38_cuboid := cuboid
+py39_cuboid := cuboid
+py40_cuboid := cuboid
+py41_cuboid := cuboid
+py42_cuboid := cuboid
+py43_cuboid := cuboid
+py44_cuboid := cuboid
+py45_cuboid := cuboid
+py46_cuboid := cuboid
+py47_cuboid := cuboid
+py48_cuboid := cuboid
+py49_cuboid := cuboid
+py50_cuboid := cuboid
+py51_cuboid := cuboid
+py52_cuboid := cuboid
+py53_cuboid := cuboid
+py54_cuboid := cuboid
+py55_cuboid := cuboid
+py56_cuboid := cuboid
+py57_cuboid := cuboid
+py58_cuboid := cuboid
+py59_cuboid := cuboid
+py60_cuboid := cuboid
+py61_cuboid := cuboid
+py62_cuboid := cuboid
+py63_cuboid := cuboid
+py64_cuboid := cuboid
+yig65_cuboid := cuboid
+yig66_cuboid := cuboid
+yig67_cuboid := cuboid
+yig68_cuboid := cuboid
+yig69_cuboid := cuboid
+yig70_cuboid := cuboid
+yig71_cuboid := cuboid
+yig72_cuboid := cuboid
+yig73_cuboid := cuboid
+yig74_cuboid := cuboid
+yig75_cuboid := cuboid
+yig76_cuboid := cuboid
+yig77_cuboid := cuboid
+yig78_cuboid := cuboid
+yig79_cuboid := cuboid
+yig80_cuboid := cuboid
+yig81_cuboid := cuboid
+yig82_cuboid := cuboid
+yig83_cuboid := cuboid
+yig84_cuboid := cuboid
+yig85_cuboid := cuboid
+yig86_cuboid := cuboid
+yig87_cuboid := cuboid
+yig88_cuboid := cuboid
+yig89_cuboid := cuboid
+yig90_cuboid := cuboid
+yig91_cuboid := cuboid
+yig92_cuboid := cuboid
+yig93_cuboid := cuboid
+yig94_cuboid := cuboid
+yig95_cuboid := cuboid
+yig96_cuboid := cuboid
+yig97_cuboid := cuboid
+yig98_cuboid := cuboid
+yig99_cuboid := cuboid
+yig100_cuboid := cuboid
+yig101_cuboid := cuboid
+yig102_cuboid := cuboid
+yig103_cuboid := cuboid
+yig104_cuboid := cuboid
+yig105_cuboid := cuboid
+yig106_cuboid := cuboid
+yig107_cuboid := cuboid
+yig108_cuboid := cuboid
+yig109_cuboid := cuboid
+yig110_cuboid := cuboid
+yig111_cuboid := cuboid
+yig112_cuboid := cuboid
+yig113_cuboid := cuboid
+yig114_cuboid := cuboid
+yig115_cuboid := cuboid
+yig116_cuboid := cuboid
+yig117_cuboid := cuboid
+yig118_cuboid := cuboid
+yig119_cuboid := cuboid
+yig120_cuboid := cuboid
+yig121_cuboid := cuboid
+yig122_cuboid := cuboid
+yig123_cuboid := cuboid
+yig124_cuboid := cuboid
+yig125_cuboid := cuboid
+yig126_cuboid := cuboid
+yig127_cuboid := cuboid
+yig128_cuboid := cuboid
+yig129_cuboid := cuboid
+
+//Set Geometry
+SetGeom(py0_cuboid.add(py1_cuboid.add(py2_cuboid.add(py3_cuboid.add(py4_cuboid.add(py5_cuboid.add(py6_cuboid.add(py7_cuboid.add(py8_cuboid.add(py9_cuboid.add(py10_cuboid.add(py11_cuboid.add(py12_cuboid.add(py13_cuboid.add(py14_cuboid.add(py15_cuboid.add(py16_cuboid.add(py17_cuboid.add(py18_cuboid.add(py19_cuboid.add(py20_cuboid.add(py21_cuboid.add(py22_cuboid.add(py23_cuboid.add(py24_cuboid.add(py25_cuboid.add(py26_cuboid.add(py27_cuboid.add(py28_cuboid.add(py29_cuboid.add(py30_cuboid.add(py31_cuboid.add(py32_cuboid.add(py33_cuboid.add(py34_cuboid.add(py35_cuboid.add(py36_cuboid.add(py37_cuboid.add(py38_cuboid.add(py39_cuboid.add(py40_cuboid.add(py41_cuboid.add(py42_cuboid.add(py43_cuboid.add(py44_cuboid.add(py45_cuboid.add(py46_cuboid.add(py47_cuboid.add(py48_cuboid.add(py49_cuboid.add(py50_cuboid.add(py51_cuboid.add(py52_cuboid.add(py53_cuboid.add(py54_cuboid.add(py55_cuboid.add(py56_cuboid.add(py57_cuboid.add(py58_cuboid.add(py59_cuboid.add(py60_cuboid.add(py61_cuboid.add(py62_cuboid.add(py63_cuboid.add(py64_cuboid.add(yig65_cuboid.add(yig66_cuboid.add(yig67_cuboid.add(yig68_cuboid.add(yig69_cuboid.add(yig70_cuboid.add(yig71_cuboid.add(yig72_cuboid.add(yig73_cuboid.add(yig74_cuboid.add(yig75_cuboid.add(yig76_cuboid.add(yig77_cuboid.add(yig78_cuboid.add(yig79_cuboid.add(yig80_cuboid.add(yig81_cuboid.add(yig82_cuboid.add(yig83_cuboid.add(yig84_cuboid.add(yig85_cuboid.add(yig86_cuboid.add(yig87_cuboid.add(yig88_cuboid.add(yig89_cuboid.add(yig90_cuboid.add(yig91_cuboid.add(yig92_cuboid.add(yig93_cuboid.add(yig94_cuboid.add(yig95_cuboid.add(yig96_cuboid.add(yig97_cuboid.add(yig98_cuboid.add(yig99_cuboid.add(yig100_cuboid.add(yig101_cuboid.add(yig102_cuboid.add(yig103_cuboid.add(yig104_cuboid.add(yig105_cuboid.add(yig106_cuboid.add(yig107_cuboid.add(yig108_cuboid.add(yig109_cuboid.add(yig110_cuboid.add(yig111_cuboid.add(yig112_cuboid.add(yig113_cuboid.add(yig114_cuboid.add(yig115_cuboid.add(yig116_cuboid.add(yig117_cuboid.add(yig118_cuboid.add(yig119_cuboid.add(yig120_cuboid.add(yig121_cuboid.add(yig122_cuboid.add(yig123_cuboid.add(yig124_cuboid.add(yig125_cuboid.add(yig126_cuboid.add(yig127_cuboid.add(yig128_cuboid.add(yig129_cuboid)))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))
+ 
+
+ 
+//Define Regions
+DefRegion(py0_cuboid,0)
+DefRegion(py1_cuboid,1)
+DefRegion(py2_cuboid,2)
+DefRegion(py3_cuboid,3)
+DefRegion(py4_cuboid,4)
+DefRegion(py5_cuboid,5)
+DefRegion(py6_cuboid,6)
+DefRegion(py7_cuboid,7)
+DefRegion(py8_cuboid,8)
+DefRegion(py9_cuboid,9)
+DefRegion(py10_cuboid,10)
+DefRegion(py11_cuboid,11)
+DefRegion(py12_cuboid,12)
+DefRegion(py13_cuboid,13)
+DefRegion(py14_cuboid,14)
+DefRegion(py15_cuboid,15)
+DefRegion(py16_cuboid,16)
+DefRegion(py17_cuboid,17)
+DefRegion(py18_cuboid,18)
+DefRegion(py19_cuboid,19)
+DefRegion(py20_cuboid,20)
+DefRegion(py21_cuboid,21)
+DefRegion(py22_cuboid,22)
+DefRegion(py23_cuboid,23)
+DefRegion(py24_cuboid,24)
+DefRegion(py25_cuboid,25)
+DefRegion(py26_cuboid,26)
+DefRegion(py27_cuboid,27)
+DefRegion(py28_cuboid,28)
+DefRegion(py29_cuboid,29)
+DefRegion(py30_cuboid,30)
+DefRegion(py31_cuboid,31)
+DefRegion(py32_cuboid,32)
+DefRegion(py33_cuboid,33)
+DefRegion(py34_cuboid,34)
+DefRegion(py35_cuboid,35)
+DefRegion(py36_cuboid,36)
+DefRegion(py37_cuboid,37)
+DefRegion(py38_cuboid,38)
+DefRegion(py39_cuboid,39)
+DefRegion(py40_cuboid,40)
+DefRegion(py41_cuboid,41)
+DefRegion(py42_cuboid,42)
+DefRegion(py43_cuboid,43)
+DefRegion(py44_cuboid,44)
+DefRegion(py45_cuboid,45)
+DefRegion(py46_cuboid,46)
+DefRegion(py47_cuboid,47)
+DefRegion(py48_cuboid,48)
+DefRegion(py49_cuboid,49)
+DefRegion(py50_cuboid,50)
+DefRegion(py51_cuboid,51)
+DefRegion(py52_cuboid,52)
+DefRegion(py53_cuboid,53)
+DefRegion(py54_cuboid,54)
+DefRegion(py55_cuboid,55)
+DefRegion(py56_cuboid,56)
+DefRegion(py57_cuboid,57)
+DefRegion(py58_cuboid,58)
+DefRegion(py59_cuboid,59)
+DefRegion(py60_cuboid,60)
+DefRegion(py61_cuboid,61)
+DefRegion(py62_cuboid,62)
+DefRegion(py63_cuboid,63)
+DefRegion(py64_cuboid,64)
+DefRegion(yig65_cuboid,65)
+DefRegion(yig66_cuboid,66)
+DefRegion(yig67_cuboid,67)
+DefRegion(yig68_cuboid,68)
+DefRegion(yig69_cuboid,69)
+DefRegion(yig70_cuboid,70)
+DefRegion(yig71_cuboid,71)
+DefRegion(yig72_cuboid,72)
+DefRegion(yig73_cuboid,73)
+DefRegion(yig74_cuboid,74)
+DefRegion(yig75_cuboid,75)
+DefRegion(yig76_cuboid,76)
+DefRegion(yig77_cuboid,77)
+DefRegion(yig78_cuboid,78)
+DefRegion(yig79_cuboid,79)
+DefRegion(yig80_cuboid,80)
+DefRegion(yig81_cuboid,81)
+DefRegion(yig82_cuboid,82)
+DefRegion(yig83_cuboid,83)
+DefRegion(yig84_cuboid,84)
+DefRegion(yig85_cuboid,85)
+DefRegion(yig86_cuboid,86)
+DefRegion(yig87_cuboid,87)
+DefRegion(yig88_cuboid,88)
+DefRegion(yig89_cuboid,89)
+DefRegion(yig90_cuboid,90)
+DefRegion(yig91_cuboid,91)
+DefRegion(yig92_cuboid,92)
+DefRegion(yig93_cuboid,93)
+DefRegion(yig94_cuboid,94)
+DefRegion(yig95_cuboid,95)
+DefRegion(yig96_cuboid,96)
+DefRegion(yig97_cuboid,97)
+DefRegion(yig98_cuboid,98)
+DefRegion(yig99_cuboid,99)
+DefRegion(yig100_cuboid,100)
+DefRegion(yig101_cuboid,101)
+DefRegion(yig102_cuboid,102)
+DefRegion(yig103_cuboid,103)
+DefRegion(yig104_cuboid,104)
+DefRegion(yig105_cuboid,105)
+DefRegion(yig106_cuboid,106)
+DefRegion(yig107_cuboid,107)
+DefRegion(yig108_cuboid,108)
+DefRegion(yig109_cuboid,109)
+DefRegion(yig110_cuboid,110)
+DefRegion(yig111_cuboid,111)
+DefRegion(yig112_cuboid,112)
+DefRegion(yig113_cuboid,113)
+DefRegion(yig114_cuboid,114)
+DefRegion(yig115_cuboid,115)
+DefRegion(yig116_cuboid,116)
+DefRegion(yig117_cuboid,117)
+DefRegion(yig118_cuboid,118)
+DefRegion(yig119_cuboid,119)
+DefRegion(yig120_cuboid,120)
+DefRegion(yig121_cuboid,121)
+DefRegion(yig122_cuboid,122)
+DefRegion(yig123_cuboid,123)
+DefRegion(yig124_cuboid,124)
+DefRegion(yig125_cuboid,125)
+DefRegion(yig126_cuboid,126)
+DefRegion(yig127_cuboid,127)
+DefRegion(yig128_cuboid,128)
+DefRegion(yig129_cuboid,129)
+
+ 
+
+ //Material Parameters 
+Msat.SetRegion(0,33.0) //py0_cuboid
+Aex.SetRegion(0,44.0) //py0_cuboid
+Msat.SetRegion(1,33.0) //py1_cuboid
+Aex.SetRegion(1,44.0) //py1_cuboid
+Msat.SetRegion(2,33.0) //py2_cuboid
+Aex.SetRegion(2,44.0) //py2_cuboid
+Msat.SetRegion(3,33.0) //py3_cuboid
+Aex.SetRegion(3,44.0) //py3_cuboid
+Msat.SetRegion(4,33.0) //py4_cuboid
+Aex.SetRegion(4,44.0) //py4_cuboid
+Msat.SetRegion(5,33.0) //py5_cuboid
+Aex.SetRegion(5,44.0) //py5_cuboid
+Msat.SetRegion(6,33.0) //py6_cuboid
+Aex.SetRegion(6,44.0) //py6_cuboid
+Msat.SetRegion(7,33.0) //py7_cuboid
+Aex.SetRegion(7,44.0) //py7_cuboid
+Msat.SetRegion(8,33.0) //py8_cuboid
+Aex.SetRegion(8,44.0) //py8_cuboid
+Msat.SetRegion(9,33.0) //py9_cuboid
+Aex.SetRegion(9,44.0) //py9_cuboid
+Msat.SetRegion(10,33.0) //py10_cuboid
+Aex.SetRegion(10,44.0) //py10_cuboid
+Msat.SetRegion(11,33.0) //py11_cuboid
+Aex.SetRegion(11,44.0) //py11_cuboid
+Msat.SetRegion(12,33.0) //py12_cuboid
+Aex.SetRegion(12,44.0) //py12_cuboid
+Msat.SetRegion(13,33.0) //py13_cuboid
+Aex.SetRegion(13,44.0) //py13_cuboid
+Msat.SetRegion(14,33.0) //py14_cuboid
+Aex.SetRegion(14,44.0) //py14_cuboid
+Msat.SetRegion(15,33.0) //py15_cuboid
+Aex.SetRegion(15,44.0) //py15_cuboid
+Msat.SetRegion(16,33.0) //py16_cuboid
+Aex.SetRegion(16,44.0) //py16_cuboid
+Msat.SetRegion(17,33.0) //py17_cuboid
+Aex.SetRegion(17,44.0) //py17_cuboid
+Msat.SetRegion(18,33.0) //py18_cuboid
+Aex.SetRegion(18,44.0) //py18_cuboid
+Msat.SetRegion(19,33.0) //py19_cuboid
+Aex.SetRegion(19,44.0) //py19_cuboid
+Msat.SetRegion(20,33.0) //py20_cuboid
+Aex.SetRegion(20,44.0) //py20_cuboid
+Msat.SetRegion(21,33.0) //py21_cuboid
+Aex.SetRegion(21,44.0) //py21_cuboid
+Msat.SetRegion(22,33.0) //py22_cuboid
+Aex.SetRegion(22,44.0) //py22_cuboid
+Msat.SetRegion(23,33.0) //py23_cuboid
+Aex.SetRegion(23,44.0) //py23_cuboid
+Msat.SetRegion(24,33.0) //py24_cuboid
+Aex.SetRegion(24,44.0) //py24_cuboid
+Msat.SetRegion(25,33.0) //py25_cuboid
+Aex.SetRegion(25,44.0) //py25_cuboid
+Msat.SetRegion(26,33.0) //py26_cuboid
+Aex.SetRegion(26,44.0) //py26_cuboid
+Msat.SetRegion(27,33.0) //py27_cuboid
+Aex.SetRegion(27,44.0) //py27_cuboid
+Msat.SetRegion(28,33.0) //py28_cuboid
+Aex.SetRegion(28,44.0) //py28_cuboid
+Msat.SetRegion(29,33.0) //py29_cuboid
+Aex.SetRegion(29,44.0) //py29_cuboid
+Msat.SetRegion(30,33.0) //py30_cuboid
+Aex.SetRegion(30,44.0) //py30_cuboid
+Msat.SetRegion(31,33.0) //py31_cuboid
+Aex.SetRegion(31,44.0) //py31_cuboid
+Msat.SetRegion(32,33.0) //py32_cuboid
+Aex.SetRegion(32,44.0) //py32_cuboid
+Msat.SetRegion(33,33.0) //py33_cuboid
+Aex.SetRegion(33,44.0) //py33_cuboid
+Msat.SetRegion(34,33.0) //py34_cuboid
+Aex.SetRegion(34,44.0) //py34_cuboid
+Msat.SetRegion(35,33.0) //py35_cuboid
+Aex.SetRegion(35,44.0) //py35_cuboid
+Msat.SetRegion(36,33.0) //py36_cuboid
+Aex.SetRegion(36,44.0) //py36_cuboid
+Msat.SetRegion(37,33.0) //py37_cuboid
+Aex.SetRegion(37,44.0) //py37_cuboid
+Msat.SetRegion(38,33.0) //py38_cuboid
+Aex.SetRegion(38,44.0) //py38_cuboid
+Msat.SetRegion(39,33.0) //py39_cuboid
+Aex.SetRegion(39,44.0) //py39_cuboid
+Msat.SetRegion(40,33.0) //py40_cuboid
+Aex.SetRegion(40,44.0) //py40_cuboid
+Msat.SetRegion(41,33.0) //py41_cuboid
+Aex.SetRegion(41,44.0) //py41_cuboid
+Msat.SetRegion(42,33.0) //py42_cuboid
+Aex.SetRegion(42,44.0) //py42_cuboid
+Msat.SetRegion(43,33.0) //py43_cuboid
+Aex.SetRegion(43,44.0) //py43_cuboid
+Msat.SetRegion(44,33.0) //py44_cuboid
+Aex.SetRegion(44,44.0) //py44_cuboid
+Msat.SetRegion(45,33.0) //py45_cuboid
+Aex.SetRegion(45,44.0) //py45_cuboid
+Msat.SetRegion(46,33.0) //py46_cuboid
+Aex.SetRegion(46,44.0) //py46_cuboid
+Msat.SetRegion(47,33.0) //py47_cuboid
+Aex.SetRegion(47,44.0) //py47_cuboid
+Msat.SetRegion(48,33.0) //py48_cuboid
+Aex.SetRegion(48,44.0) //py48_cuboid
+Msat.SetRegion(49,33.0) //py49_cuboid
+Aex.SetRegion(49,44.0) //py49_cuboid
+Msat.SetRegion(50,33.0) //py50_cuboid
+Aex.SetRegion(50,44.0) //py50_cuboid
+Msat.SetRegion(51,33.0) //py51_cuboid
+Aex.SetRegion(51,44.0) //py51_cuboid
+Msat.SetRegion(52,33.0) //py52_cuboid
+Aex.SetRegion(52,44.0) //py52_cuboid
+Msat.SetRegion(53,33.0) //py53_cuboid
+Aex.SetRegion(53,44.0) //py53_cuboid
+Msat.SetRegion(54,33.0) //py54_cuboid
+Aex.SetRegion(54,44.0) //py54_cuboid
+Msat.SetRegion(55,33.0) //py55_cuboid
+Aex.SetRegion(55,44.0) //py55_cuboid
+Msat.SetRegion(56,33.0) //py56_cuboid
+Aex.SetRegion(56,44.0) //py56_cuboid
+Msat.SetRegion(57,33.0) //py57_cuboid
+Aex.SetRegion(57,44.0) //py57_cuboid
+Msat.SetRegion(58,33.0) //py58_cuboid
+Aex.SetRegion(58,44.0) //py58_cuboid
+Msat.SetRegion(59,33.0) //py59_cuboid
+Aex.SetRegion(59,44.0) //py59_cuboid
+Msat.SetRegion(60,33.0) //py60_cuboid
+Aex.SetRegion(60,44.0) //py60_cuboid
+Msat.SetRegion(61,33.0) //py61_cuboid
+Aex.SetRegion(61,44.0) //py61_cuboid
+Msat.SetRegion(62,33.0) //py62_cuboid
+Aex.SetRegion(62,44.0) //py62_cuboid
+Msat.SetRegion(63,33.0) //py63_cuboid
+Aex.SetRegion(63,44.0) //py63_cuboid
+Msat.SetRegion(64,33.0) //py64_cuboid
+Aex.SetRegion(64,44.0) //py64_cuboid
+Msat.SetRegion(65,21.0) //yig65_cuboid
+Aex.SetRegion(65,11.0) //yig65_cuboid
+Msat.SetRegion(66,21.0) //yig66_cuboid
+Aex.SetRegion(66,11.0) //yig66_cuboid
+Msat.SetRegion(67,21.0) //yig67_cuboid
+Aex.SetRegion(67,11.0) //yig67_cuboid
+Msat.SetRegion(68,21.0) //yig68_cuboid
+Aex.SetRegion(68,11.0) //yig68_cuboid
+Msat.SetRegion(69,21.0) //yig69_cuboid
+Aex.SetRegion(69,11.0) //yig69_cuboid
+Msat.SetRegion(70,21.0) //yig70_cuboid
+Aex.SetRegion(70,11.0) //yig70_cuboid
+Msat.SetRegion(71,21.0) //yig71_cuboid
+Aex.SetRegion(71,11.0) //yig71_cuboid
+Msat.SetRegion(72,21.0) //yig72_cuboid
+Aex.SetRegion(72,11.0) //yig72_cuboid
+Msat.SetRegion(73,21.0) //yig73_cuboid
+Aex.SetRegion(73,11.0) //yig73_cuboid
+Msat.SetRegion(74,21.0) //yig74_cuboid
+Aex.SetRegion(74,11.0) //yig74_cuboid
+Msat.SetRegion(75,21.0) //yig75_cuboid
+Aex.SetRegion(75,11.0) //yig75_cuboid
+Msat.SetRegion(76,21.0) //yig76_cuboid
+Aex.SetRegion(76,11.0) //yig76_cuboid
+Msat.SetRegion(77,21.0) //yig77_cuboid
+Aex.SetRegion(77,11.0) //yig77_cuboid
+Msat.SetRegion(78,21.0) //yig78_cuboid
+Aex.SetRegion(78,11.0) //yig78_cuboid
+Msat.SetRegion(79,21.0) //yig79_cuboid
+Aex.SetRegion(79,11.0) //yig79_cuboid
+Msat.SetRegion(80,21.0) //yig80_cuboid
+Aex.SetRegion(80,11.0) //yig80_cuboid
+Msat.SetRegion(81,21.0) //yig81_cuboid
+Aex.SetRegion(81,11.0) //yig81_cuboid
+Msat.SetRegion(82,21.0) //yig82_cuboid
+Aex.SetRegion(82,11.0) //yig82_cuboid
+Msat.SetRegion(83,21.0) //yig83_cuboid
+Aex.SetRegion(83,11.0) //yig83_cuboid
+Msat.SetRegion(84,21.0) //yig84_cuboid
+Aex.SetRegion(84,11.0) //yig84_cuboid
+Msat.SetRegion(85,21.0) //yig85_cuboid
+Aex.SetRegion(85,11.0) //yig85_cuboid
+Msat.SetRegion(86,21.0) //yig86_cuboid
+Aex.SetRegion(86,11.0) //yig86_cuboid
+Msat.SetRegion(87,21.0) //yig87_cuboid
+Aex.SetRegion(87,11.0) //yig87_cuboid
+Msat.SetRegion(88,21.0) //yig88_cuboid
+Aex.SetRegion(88,11.0) //yig88_cuboid
+Msat.SetRegion(89,21.0) //yig89_cuboid
+Aex.SetRegion(89,11.0) //yig89_cuboid
+Msat.SetRegion(90,21.0) //yig90_cuboid
+Aex.SetRegion(90,11.0) //yig90_cuboid
+Msat.SetRegion(91,21.0) //yig91_cuboid
+Aex.SetRegion(91,11.0) //yig91_cuboid
+Msat.SetRegion(92,21.0) //yig92_cuboid
+Aex.SetRegion(92,11.0) //yig92_cuboid
+Msat.SetRegion(93,21.0) //yig93_cuboid
+Aex.SetRegion(93,11.0) //yig93_cuboid
+Msat.SetRegion(94,21.0) //yig94_cuboid
+Aex.SetRegion(94,11.0) //yig94_cuboid
+Msat.SetRegion(95,21.0) //yig95_cuboid
+Aex.SetRegion(95,11.0) //yig95_cuboid
+Msat.SetRegion(96,21.0) //yig96_cuboid
+Aex.SetRegion(96,11.0) //yig96_cuboid
+Msat.SetRegion(97,21.0) //yig97_cuboid
+Aex.SetRegion(97,11.0) //yig97_cuboid
+Msat.SetRegion(98,21.0) //yig98_cuboid
+Aex.SetRegion(98,11.0) //yig98_cuboid
+Msat.SetRegion(99,21.0) //yig99_cuboid
+Aex.SetRegion(99,11.0) //yig99_cuboid
+Msat.SetRegion(100,21.0) //yig100_cuboid
+Aex.SetRegion(100,11.0) //yig100_cuboid
+Msat.SetRegion(101,21.0) //yig101_cuboid
+Aex.SetRegion(101,11.0) //yig101_cuboid
+Msat.SetRegion(102,21.0) //yig102_cuboid
+Aex.SetRegion(102,11.0) //yig102_cuboid
+Msat.SetRegion(103,21.0) //yig103_cuboid
+Aex.SetRegion(103,11.0) //yig103_cuboid
+Msat.SetRegion(104,21.0) //yig104_cuboid
+Aex.SetRegion(104,11.0) //yig104_cuboid
+Msat.SetRegion(105,21.0) //yig105_cuboid
+Aex.SetRegion(105,11.0) //yig105_cuboid
+Msat.SetRegion(106,21.0) //yig106_cuboid
+Aex.SetRegion(106,11.0) //yig106_cuboid
+Msat.SetRegion(107,21.0) //yig107_cuboid
+Aex.SetRegion(107,11.0) //yig107_cuboid
+Msat.SetRegion(108,21.0) //yig108_cuboid
+Aex.SetRegion(108,11.0) //yig108_cuboid
+Msat.SetRegion(109,21.0) //yig109_cuboid
+Aex.SetRegion(109,11.0) //yig109_cuboid
+Msat.SetRegion(110,21.0) //yig110_cuboid
+Aex.SetRegion(110,11.0) //yig110_cuboid
+Msat.SetRegion(111,21.0) //yig111_cuboid
+Aex.SetRegion(111,11.0) //yig111_cuboid
+Msat.SetRegion(112,21.0) //yig112_cuboid
+Aex.SetRegion(112,11.0) //yig112_cuboid
+Msat.SetRegion(113,21.0) //yig113_cuboid
+Aex.SetRegion(113,11.0) //yig113_cuboid
+Msat.SetRegion(114,21.0) //yig114_cuboid
+Aex.SetRegion(114,11.0) //yig114_cuboid
+Msat.SetRegion(115,21.0) //yig115_cuboid
+Aex.SetRegion(115,11.0) //yig115_cuboid
+Msat.SetRegion(116,21.0) //yig116_cuboid
+Aex.SetRegion(116,11.0) //yig116_cuboid
+Msat.SetRegion(117,21.0) //yig117_cuboid
+Aex.SetRegion(117,11.0) //yig117_cuboid
+Msat.SetRegion(118,21.0) //yig118_cuboid
+Aex.SetRegion(118,11.0) //yig118_cuboid
+Msat.SetRegion(119,21.0) //yig119_cuboid
+Aex.SetRegion(119,11.0) //yig119_cuboid
+Msat.SetRegion(120,21.0) //yig120_cuboid
+Aex.SetRegion(120,11.0) //yig120_cuboid
+Msat.SetRegion(121,21.0) //yig121_cuboid
+Aex.SetRegion(121,11.0) //yig121_cuboid
+Msat.SetRegion(122,21.0) //yig122_cuboid
+Aex.SetRegion(122,11.0) //yig122_cuboid
+Msat.SetRegion(123,21.0) //yig123_cuboid
+Aex.SetRegion(123,11.0) //yig123_cuboid
+Msat.SetRegion(124,21.0) //yig124_cuboid
+Aex.SetRegion(124,11.0) //yig124_cuboid
+Msat.SetRegion(125,21.0) //yig125_cuboid
+Aex.SetRegion(125,11.0) //yig125_cuboid
+Msat.SetRegion(126,21.0) //yig126_cuboid
+Aex.SetRegion(126,11.0) //yig126_cuboid
+Msat.SetRegion(127,21.0) //yig127_cuboid
+Aex.SetRegion(127,11.0) //yig127_cuboid
+Msat.SetRegion(128,21.0) //yig128_cuboid
+Aex.SetRegion(128,11.0) //yig128_cuboid
+Msat.SetRegion(129,21.0) //yig129_cuboid
+Aex.SetRegion(129,11.0) //yig129_cuboid
+
+\Set Alpha 
+alpha.SetRegion(py0_cuboid,alphaFree)
+alpha.SetRegion(py1_cuboid,alphaFree)
+alpha.SetRegion(py2_cuboid,alphaFree)
+alpha.SetRegion(py3_cuboid,alphaFree)
+alpha.SetRegion(py4_cuboid,alphaFree)
+alpha.SetRegion(py5_cuboid,alphaFree)
+alpha.SetRegion(py6_cuboid,alphaFree)
+alpha.SetRegion(py7_cuboid,alphaFree)
+alpha.SetRegion(py8_cuboid,alphaFree)
+alpha.SetRegion(py9_cuboid,alphaFree)
+alpha.SetRegion(py10_cuboid,alphaFree)
+alpha.SetRegion(py11_cuboid,alphaFree)
+alpha.SetRegion(py12_cuboid,alphaFree)
+alpha.SetRegion(py13_cuboid,alphaFree)
+alpha.SetRegion(py14_cuboid,alphaFree)
+alpha.SetRegion(py15_cuboid,alphaFree)
+alpha.SetRegion(py16_cuboid,alphaFree)
+alpha.SetRegion(py17_cuboid,alphaFree)
+alpha.SetRegion(py18_cuboid,alphaFree)
+alpha.SetRegion(py19_cuboid,alphaFree)
+alpha.SetRegion(py20_cuboid,alphaFree)
+alpha.SetRegion(py21_cuboid,alphaFree)
+alpha.SetRegion(py22_cuboid,alphaFree)
+alpha.SetRegion(py23_cuboid,alphaFree)
+alpha.SetRegion(py24_cuboid,alphaFree)
+alpha.SetRegion(py25_cuboid,alphaFree)
+alpha.SetRegion(py26_cuboid,alphaFree)
+alpha.SetRegion(py27_cuboid,alphaFree)
+alpha.SetRegion(py28_cuboid,alphaFree)
+alpha.SetRegion(py29_cuboid,alphaFree)
+alpha.SetRegion(py30_cuboid,alphaFree)
+alpha.SetRegion(py31_cuboid,alphaFree)
+alpha.SetRegion(py32_cuboid,alphaFree)
+alpha.SetRegion(py33_cuboid,alphaFree)
+alpha.SetRegion(py34_cuboid,alphaFree)
+alpha.SetRegion(py35_cuboid,alphaFree)
+alpha.SetRegion(py36_cuboid,alphaFree)
+alpha.SetRegion(py37_cuboid,alphaFree)
+alpha.SetRegion(py38_cuboid,alphaFree)
+alpha.SetRegion(py39_cuboid,alphaFree)
+alpha.SetRegion(py40_cuboid,alphaFree)
+alpha.SetRegion(py41_cuboid,alphaFree)
+alpha.SetRegion(py42_cuboid,alphaFree)
+alpha.SetRegion(py43_cuboid,alphaFree)
+alpha.SetRegion(py44_cuboid,alphaFree)
+alpha.SetRegion(py45_cuboid,alphaFree)
+alpha.SetRegion(py46_cuboid,alphaFree)
+alpha.SetRegion(py47_cuboid,alphaFree)
+alpha.SetRegion(py48_cuboid,alphaFree)
+alpha.SetRegion(py49_cuboid,alphaFree)
+alpha.SetRegion(py50_cuboid,alphaFree)
+alpha.SetRegion(py51_cuboid,alphaFree)
+alpha.SetRegion(py52_cuboid,alphaFree)
+alpha.SetRegion(py53_cuboid,alphaFree)
+alpha.SetRegion(py54_cuboid,alphaFree)
+alpha.SetRegion(py55_cuboid,alphaFree)
+alpha.SetRegion(py56_cuboid,alphaFree)
+alpha.SetRegion(py57_cuboid,alphaFree)
+alpha.SetRegion(py58_cuboid,alphaFree)
+alpha.SetRegion(py59_cuboid,alphaFree)
+alpha.SetRegion(py60_cuboid,alphaFree)
+alpha.SetRegion(py61_cuboid,alphaFree)
+alpha.SetRegion(py62_cuboid,alphaFree)
+alpha.SetRegion(py63_cuboid,alphaFree)
+alpha.SetRegion(py64_cuboid,alphaFree)
+alpha.SetRegion(yig65_cuboid,alphaFree)
+alpha.SetRegion(yig66_cuboid,alphaFree)
+alpha.SetRegion(yig67_cuboid,alphaFree)
+alpha.SetRegion(yig68_cuboid,alphaFree)
+alpha.SetRegion(yig69_cuboid,alphaFree)
+alpha.SetRegion(yig70_cuboid,alphaFree)
+alpha.SetRegion(yig71_cuboid,alphaFree)
+alpha.SetRegion(yig72_cuboid,alphaFree)
+alpha.SetRegion(yig73_cuboid,alphaFree)
+alpha.SetRegion(yig74_cuboid,alphaFree)
+alpha.SetRegion(yig75_cuboid,alphaFree)
+alpha.SetRegion(yig76_cuboid,alphaFree)
+alpha.SetRegion(yig77_cuboid,alphaFree)
+alpha.SetRegion(yig78_cuboid,alphaFree)
+alpha.SetRegion(yig79_cuboid,alphaFree)
+alpha.SetRegion(yig80_cuboid,alphaFree)
+alpha.SetRegion(yig81_cuboid,alphaFree)
+alpha.SetRegion(yig82_cuboid,alphaFree)
+alpha.SetRegion(yig83_cuboid,alphaFree)
+alpha.SetRegion(yig84_cuboid,alphaFree)
+alpha.SetRegion(yig85_cuboid,alphaFree)
+alpha.SetRegion(yig86_cuboid,alphaFree)
+alpha.SetRegion(yig87_cuboid,alphaFree)
+alpha.SetRegion(yig88_cuboid,alphaFree)
+alpha.SetRegion(yig89_cuboid,alphaFree)
+alpha.SetRegion(yig90_cuboid,alphaFree)
+alpha.SetRegion(yig91_cuboid,alphaFree)
+alpha.SetRegion(yig92_cuboid,alphaFree)
+alpha.SetRegion(yig93_cuboid,alphaFree)
+alpha.SetRegion(yig94_cuboid,alphaFree)
+alpha.SetRegion(yig95_cuboid,alphaFree)
+alpha.SetRegion(yig96_cuboid,alphaFree)
+alpha.SetRegion(yig97_cuboid,alphaFree)
+alpha.SetRegion(yig98_cuboid,alphaFree)
+alpha.SetRegion(yig99_cuboid,alphaFree)
+alpha.SetRegion(yig100_cuboid,alphaFree)
+alpha.SetRegion(yig101_cuboid,alphaFree)
+alpha.SetRegion(yig102_cuboid,alphaFree)
+alpha.SetRegion(yig103_cuboid,alphaFree)
+alpha.SetRegion(yig104_cuboid,alphaFree)
+alpha.SetRegion(yig105_cuboid,alphaFree)
+alpha.SetRegion(yig106_cuboid,alphaFree)
+alpha.SetRegion(yig107_cuboid,alphaFree)
+alpha.SetRegion(yig108_cuboid,alphaFree)
+alpha.SetRegion(yig109_cuboid,alphaFree)
+alpha.SetRegion(yig110_cuboid,alphaFree)
+alpha.SetRegion(yig111_cuboid,alphaFree)
+alpha.SetRegion(yig112_cuboid,alphaFree)
+alpha.SetRegion(yig113_cuboid,alphaFree)
+alpha.SetRegion(yig114_cuboid,alphaFree)
+alpha.SetRegion(yig115_cuboid,alphaFree)
+alpha.SetRegion(yig116_cuboid,alphaFree)
+alpha.SetRegion(yig117_cuboid,alphaFree)
+alpha.SetRegion(yig118_cuboid,alphaFree)
+alpha.SetRegion(yig119_cuboid,alphaFree)
+alpha.SetRegion(yig120_cuboid,alphaFree)
+alpha.SetRegion(yig121_cuboid,alphaFree)
+alpha.SetRegion(yig122_cuboid,alphaFree)
+alpha.SetRegion(yig123_cuboid,alphaFree)
+alpha.SetRegion(yig124_cuboid,alphaFree)
+alpha.SetRegion(yig125_cuboid,alphaFree)
+alpha.SetRegion(yig126_cuboid,alphaFree)
+alpha.SetRegion(yig127_cuboid,alphaFree)
+alpha.SetRegion(yig128_cuboid,alphaFree)
+alpha.SetRegion(yig129_cuboid,alphaFree)
+
+\Manipulate Interlayer Exchange
+ext_ScaleExchange(1,2,0.18694043347559453)
+ext_ScaleExchange(1,66,0.18694043347559453)
+ext_ScaleExchange(2,3,0.08175864073206003)
+ext_ScaleExchange(2,67,0.08175864073206003)
+ext_ScaleExchange(3,4,0.13073365703944187)
+ext_ScaleExchange(3,68,0.13073365703944187)
+ext_ScaleExchange(4,5,0.7386595495611554)
+ext_ScaleExchange(4,69,0.7386595495611554)
+ext_ScaleExchange(5,6,-0.024830581341388866)
+ext_ScaleExchange(5,70,-0.024830581341388866)
+ext_ScaleExchange(6,7,0.20331968775125883)
+ext_ScaleExchange(6,71,0.20331968775125883)
+ext_ScaleExchange(7,8,0.10239067726341988)
+ext_ScaleExchange(7,72,0.10239067726341988)
+ext_ScaleExchange(8,9,0.3468179224034989)
+ext_ScaleExchange(8,73,0.3468179224034989)
+ext_ScaleExchange(9,10,0.11273407960138535)
+ext_ScaleExchange(9,74,0.11273407960138535)
+ext_ScaleExchange(10,11,0.43618716434791893)
+ext_ScaleExchange(10,75,0.43618716434791893)
+ext_ScaleExchange(11,12,0.2543112149876777)
+ext_ScaleExchange(11,76,0.2543112149876777)
+ext_ScaleExchange(12,13,-0.031915223846228635)
+ext_ScaleExchange(12,77,-0.031915223846228635)
+ext_ScaleExchange(13,14,0.3595582625893299)
+ext_ScaleExchange(13,78,0.3595582625893299)
+ext_ScaleExchange(14,15,-0.04157988853579911)
+ext_ScaleExchange(14,79,-0.04157988853579911)
+ext_ScaleExchange(15,16,-0.04458659708989454)
+ext_ScaleExchange(15,80,-0.04458659708989454)
+ext_ScaleExchange(16,17,0.2110744067021635)
+ext_ScaleExchange(16,81,0.2110744067021635)
+ext_ScaleExchange(17,18,-0.2168207594685155)
+ext_ScaleExchange(17,82,-0.2168207594685155)
+ext_ScaleExchange(18,19,0.1602771059514283)
+ext_ScaleExchange(18,83,0.1602771059514283)
+ext_ScaleExchange(19,20,0.044582055455885075)
+ext_ScaleExchange(19,84,0.044582055455885075)
+ext_ScaleExchange(20,21,0.059148192905274635)
+ext_ScaleExchange(20,85,0.059148192905274635)
+ext_ScaleExchange(21,22,0.3160051342507878)
+ext_ScaleExchange(21,86,0.3160051342507878)
+ext_ScaleExchange(22,23,0.110300577448987)
+ext_ScaleExchange(22,87,0.110300577448987)
+ext_ScaleExchange(23,24,0.039202420716833)
+ext_ScaleExchange(23,88,0.039202420716833)
+ext_ScaleExchange(24,25,0.12993840247850202)
+ext_ScaleExchange(24,89,0.12993840247850202)
+ext_ScaleExchange(25,26,0.3073641824658523)
+ext_ScaleExchange(25,90,0.3073641824658523)
+ext_ScaleExchange(26,27,-0.049269516718385586)
+ext_ScaleExchange(26,91,-0.049269516718385586)
+ext_ScaleExchange(27,28,-0.1176893592107581)
+ext_ScaleExchange(27,92,-0.1176893592107581)
+ext_ScaleExchange(28,29,-0.0931493674599512)
+ext_ScaleExchange(28,93,-0.0931493674599512)
+ext_ScaleExchange(29,30,-0.13242303698322286)
+ext_ScaleExchange(29,94,-0.13242303698322286)
+ext_ScaleExchange(30,31,-0.001763315837412488)
+ext_ScaleExchange(30,95,-0.001763315837412488)
+ext_ScaleExchange(31,32,0.09287188681223375)
+ext_ScaleExchange(31,96,0.09287188681223375)
+ext_ScaleExchange(32,33,0.40924324715903404)
+ext_ScaleExchange(32,97,0.40924324715903404)
+ext_ScaleExchange(33,34,0.08562119032581852)
+ext_ScaleExchange(33,98,0.08562119032581852)
+ext_ScaleExchange(34,35,0.1529881644829654)
+ext_ScaleExchange(34,99,0.1529881644829654)
+ext_ScaleExchange(35,36,0.14884243834967958)
+ext_ScaleExchange(35,100,0.14884243834967958)
+ext_ScaleExchange(36,37,0.06297345658439601)
+ext_ScaleExchange(36,101,0.06297345658439601)
+ext_ScaleExchange(37,38,0.1363071983134022)
+ext_ScaleExchange(37,102,0.1363071983134022)
+ext_ScaleExchange(38,39,-0.30301643880323137)
+ext_ScaleExchange(38,103,-0.30301643880323137)
+ext_ScaleExchange(39,40,0.3608125190692383)
+ext_ScaleExchange(39,104,0.3608125190692383)
+ext_ScaleExchange(40,41,0.3021227683852843)
+ext_ScaleExchange(40,105,0.3021227683852843)
+ext_ScaleExchange(41,42,-0.12654101020506642)
+ext_ScaleExchange(41,106,-0.12654101020506642)
+ext_ScaleExchange(42,43,0.186206773051859)
+ext_ScaleExchange(42,107,0.186206773051859)
+ext_ScaleExchange(43,44,0.181314608938862)
+ext_ScaleExchange(43,108,0.181314608938862)
+ext_ScaleExchange(44,45,0.057961437860586856)
+ext_ScaleExchange(44,109,0.057961437860586856)
+ext_ScaleExchange(45,46,0.19380974488668357)
+ext_ScaleExchange(45,110,0.19380974488668357)
+ext_ScaleExchange(46,47,-0.041705271717433795)
+ext_ScaleExchange(46,111,-0.041705271717433795)
+ext_ScaleExchange(47,48,0.2437302899892927)
+ext_ScaleExchange(47,112,0.2437302899892927)
+ext_ScaleExchange(48,49,0.15430357137138945)
+ext_ScaleExchange(48,113,0.15430357137138945)
+ext_ScaleExchange(49,50,0.23226911495828073)
+ext_ScaleExchange(49,114,0.23226911495828073)
+ext_ScaleExchange(50,51,0.028429246661951055)
+ext_ScaleExchange(50,115,0.028429246661951055)
+ext_ScaleExchange(51,52,0.2014224166785785)
+ext_ScaleExchange(51,116,0.2014224166785785)
+ext_ScaleExchange(52,53,0.10105098909686847)
+ext_ScaleExchange(52,117,0.10105098909686847)
+ext_ScaleExchange(53,54,-0.39385238430159597)
+ext_ScaleExchange(53,118,-0.39385238430159597)
+ext_ScaleExchange(54,55,0.05791926805561882)
+ext_ScaleExchange(54,119,0.05791926805561882)
+ext_ScaleExchange(55,56,0.2638856743070348)
+ext_ScaleExchange(55,120,0.2638856743070348)
+ext_ScaleExchange(56,57,0.458773039039553)
+ext_ScaleExchange(56,121,0.458773039039553)
+ext_ScaleExchange(57,58,-0.009340926813091802)
+ext_ScaleExchange(57,122,-0.009340926813091802)
+ext_ScaleExchange(58,59,0.16015118962303304)
+ext_ScaleExchange(58,123,0.16015118962303304)
+ext_ScaleExchange(59,60,-0.285887949027945)
+ext_ScaleExchange(59,124,-0.285887949027945)
+ext_ScaleExchange(60,61,-0.049641928631254634)
+ext_ScaleExchange(60,125,-0.049641928631254634)
+ext_ScaleExchange(61,62,0.21538837489537238)
+ext_ScaleExchange(61,126,0.21538837489537238)
+ext_ScaleExchange(62,63,0.2267965434703273)
+ext_ScaleExchange(62,127,0.2267965434703273)
+ext_ScaleExchange(63,64,0.18535852564865174)
+ext_ScaleExchange(63,128,0.18535852564865174)
+ext_ScaleExchange(64,65,-0.1898627988265438)
+ext_ScaleExchange(64,129,-0.1898627988265438)
