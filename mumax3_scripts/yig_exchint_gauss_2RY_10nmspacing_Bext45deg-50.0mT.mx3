@@ -1,0 +1,152 @@
+// Yig Nanowire Simulations
+// Probing mumax behavior w/ exchange interaction between regions of the same material
+// 5mT Gaussian Pulse out of plane excitations
+// 2 Regions cut off axis (y-axis)
+// 1 nm spacing layer along in between yig layers
+// Bext at 45 deg
+
+/** GEOMETRY **/
+
+// nanowire dimensions
+length := 3.8e-6 // Sets X
+Width := 190e-9 // Sets Y
+thickness := 25e-9 // Sets Z
+
+// Num Grids
+Nx := 1024 
+Ny := 32 
+Nz := 5
+
+// Unit Cell Dimensions
+Xx := length/Nx
+Yy := width/Ny
+Zz := thickness/Nz
+
+SetGridSize(Nx, Ny, Nz)
+SetCellSize(Xx, Yy, Zz)
+
+// Provide variables for shape defintion. This makes DefRegion and SetGeom easier.
+space := 2*xx
+//yig_cuboid := cuboid(length, width, thickness)
+//space_cuboid := cuboid(length, space, thickness)
+yig_l := (length-space)/2
+
+yig_top := cuboid(yig_l, width, thickness).transl(length/2 - yig_l/2, 0, 0)
+yig_bot := cuboid(yig_l, width, thickness).transl(-(length/2 - yig_l/2), 0, 0)
+
+// Set Geometry
+SetGeom(yig_top.add(yig_bot))
+saveas(geom, "geom")
+
+// Define Regions
+DefRegion(0, yig_top)
+DefRegion(1, yig_bot)
+snapshot(regions)
+
+/** END GEOMETRY **/ 
+
+
+/** MATERIAL PARAMETERS **/
+
+// YIG Msat = 237,000 A/m @77K
+// Aex_YIG = 3.5e-7 erg/cm --> 1e-6 erg/cm = 10 pJ/m
+
+Msat.SetRegion(0, 175e3)  // yig layer 0
+Aex.SetRegion(0, 3.5e-12) // yig layer 0
+Msat.SetRegion(1, 175e3)  // yig layer 1
+Aex.SetRegion(1, 3.5e-12) // yig layer 1
+//Msat.SetRegion(2, 0)      // spacing 
+//Aex.SetRegion(2, 0)       // spacing
+
+//Msat.SetRegion(0, 800e3)  // Py Msat = 800,000 A/m @77K
+//Aex.SetRegion(0, 1.3e-11)  // Aex_Py = 1.3e-6 erg/cm --> 1e-6 erg/cm = 10 pJ/m
+
+alphaFree := 0.01 // Used for f(H) sinc
+alpha.SetRegion(0, alphaFree)
+alpha.SetRegion(1, alphaFree)
+
+g_fct := 2.05 // Used average for Py and YIG
+mu_B := 9.2740091523E-24
+h_bar := 1.05457173E-34
+GammaLL = (mu_B/h_bar)*g_fct
+
+// Manipulates Interlayer Exchange
+//ext_scaleExchange(0, 2, 0)  // yig0 and space
+//ext_scaleExchange(1, 2, 0)  // yig1 and space
+
+/** END MATERIAL PARAMETERS **/
+
+
+/** f(H) SETTINGS **/
+
+// Using mT because everything's in SI, program takes Tesla; 1 mT = 10 Oe
+//Bmin:= 0.0 //mT
+//Bmax:= 180.0 //mT
+//Bstep:= 10.0
+//Bstepnum := (Bmax-Bmin)/Bstep
+phi_H := 45 //0.1 // 0 degrees = x axis
+
+f_cut := 20.0e9 //Hz
+t_cut := 1/f_cut
+t_sample := 0.5*t_cut
+omega_cut := 2 * pi * f_cut
+
+/** END f(H) SETTINGS **/
+
+
+/** TABLE SETTINGS **/
+
+tableadd(B_ext)
+//tableadd(m.region(0))
+//tableadd(m.region(1))
+Bapp:=50.0
+TableAddVar(Bapp,"Field","mT")
+TableAddVar(phi_H,"phi_H","deg")
+Amp := 0.005// T
+
+/** END TABLE SETTINGS **/
+
+
+/** EXCITATIONS **/
+
+
+print(Bapp)
+
+B_ext.SetRegion(0, vector((Bapp)*cos(phi_H*pi/180)/1000,(Bapp)*sin(phi_H*pi/180)/1000,0))
+B_ext.SetRegion(1, vector((Bapp)*cos(phi_H*pi/180)/1000,(Bapp)*sin(phi_H*pi/180)/1000,0))
+
+m.setRegion(0, uniform(cos(phi_H*pi/180), sin(phi_H*pi/180), 0))
+m.setRegion(1, uniform(cos(phi_H*pi/180), sin(phi_H*pi/180), 0))
+
+
+
+relax()
+alpha = alphaFree
+	
+// Gaussian external field profile
+mask := newVectorMask(Nx, Ny, Nz)
+for i:=0; i<Nx; i++{
+	for j:=0; j<Ny; j++{
+		for k:=0; k<Nz; k++{			
+			r := index2coord(i, j, k)
+			x := r.X()
+			y := r.Y()
+			z := r.Z()
+			Bz := exp(-pow((x)/2000e-9, 2)) * exp(pow((y)/150e-9, 2))
+			mask.setVector(i, j, k, vector(0, 0, Bz))
+		}
+	}
+}
+
+B_ext.add(mask, -Amp*sin(omega_cut*(t-5*t_cut))/(omega_cut*(t-5*t_cut)))
+
+// There is no harm to save with a small time step for the table
+tableautosave(5e-12)
+autosave(m,10e-12)  //  Single Mode Only
+run(25e-9)
+t = floor(t)
+
+
+/** END EXCITATIONS **/
+
+
