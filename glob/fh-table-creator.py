@@ -3,7 +3,7 @@
 ## Code generates a single `fh_table.txt` file ready for MagicPlot
 ## after having run `pwsp_all.sh` to process .ovf files
 ## Stephen Iota
-## last updated: 11-2018
+## last updated: 02-2019
 ##################################################################
 
 import sys, os
@@ -28,7 +28,7 @@ for dir, __ in enumerate(dir_names):
 
     ## initialize output array
     num_fields = len(dir_names[dir])
-    #num_hzs = len()
+
     current_fh_table = np.zeros([num_fields,1250])
 
     for field, __ in enumerate(file_names):
@@ -39,7 +39,7 @@ for dir, __ in enumerate(dir_names):
     # current_fh_table = current_fh_table.T
     np.savetxt("fh_table.txt",current_fh_table.T,delimiter="\t")
     print("Data table saved at ./"+dir_names[dir]+"fh_table.txt")
-    
+
     os.chdir("..")
 
 print("Finished! Have fun plotting data :-)")
