@@ -1,5 +1,6 @@
-/papers/
+/papers/*
 *.out
 .DS_Store
 .texpad_tmp
 .ipynb_checkpoints/
+*.txt
