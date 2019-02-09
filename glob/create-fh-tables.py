@@ -5,34 +5,31 @@
 ## Stephen Iota
 ## last updated: 02-2019
 
-import sys, os
+import sys, os, re
 import numpy as np
 from glob import glob
 
-## pass in dir with .out folders when running script
-try:
-    current_dir = sys.argv[1]
-    print(current_dir)
-except:
-    print("ERROR: Please pass in current directory")
-    exit()
 
-## pull paths to all .txt files
-os.chdir(current_dir)
-print("CWD: "+current_dir)
-file_names = sorted(glob("*.out/spectrum-new.txt"))
+def alph_to_int(text):
+    return int(text) if text.isdigit() else text
 
+def my_sort_key(text):
+    return [ alph_to_int(c) for c in re.split(r'(\d+)', text) ]
+
+
+file_names = glob("*.out/spectrum-new.txt")
+file_names.sort(key=my_sort_key)
 print(file_names)
 
 ## initialize output array
 num_fields = len(file_names)
-num_hzs = len(np.loadtxt(file_names[0],skiprows=1,unpack=True)[:])
-current_fh_table = np.zeros([num_fields+1,1250]) ## change depending on time
+num_hzs = len(np.loadtxt(file_names[0],skiprows=1,unpack=True)[0,:])
+current_fh_table = np.zeros([num_fields+1,num_hzs]) ## change depending on time
 
 for field, __ in enumerate(file_names):
     if field == 0:
         current_table = np.loadtxt(file_names[field],skiprows=1,unpack=True)
-        current_fh_table[0] = current_table[1]
+        current_fh_table[0] = current_table[1] # Hz values
         current_fh_table[1] = current_table[5]
     else:
         current_table = np.loadtxt(file_names[field],skiprows=1,unpack=True)
