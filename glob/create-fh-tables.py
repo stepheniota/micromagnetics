@@ -24,7 +24,7 @@ print(file_names)
 ## initialize output array
 num_fields = len(file_names)
 num_hzs = len(np.loadtxt(file_names[0],skiprows=1,unpack=True)[0,:])
-current_fh_table = np.zeros([num_fields+1,num_hzs]) ## change depending on time
+current_fh_table = np.zeros([num_fields+1,num_hzs])
 
 for field, __ in enumerate(file_names):
     if field == 0:
