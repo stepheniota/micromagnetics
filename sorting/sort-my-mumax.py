@@ -14,7 +14,6 @@ def alph_to_int(text):
 def sorting_key(text):
     return [ alph_to_int(c) for c in re.split(r'(\d+)', text) ]
 
-file_names = glob("*.out/")
-print(file_names)
+file_names = glob("*.out/spectrum-new.txt")
 file_names.sort(key=sorting_key)
-print(file_names)
+print(file_names[:20])
